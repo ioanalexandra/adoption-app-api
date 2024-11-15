@@ -89,6 +89,10 @@ module.exports = {
 			min: envVars.SQL_MIN_POOL,
 			idle: envVars.SQL_IDLE,
 		},
+		dialectOptions: {
+            ssl: true
+        },
+		ssl: true,
 		define: {
 			/**
 			 * All tables won't have "createdAt" and "updatedAt" Auto fields.
